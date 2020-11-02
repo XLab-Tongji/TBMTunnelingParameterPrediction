@@ -1,5 +1,6 @@
 # DNN NN Module
-from tensorflow.keras import Input,layers,models,optimizers,metrics,regularizers
+# from tensorflow.keras import Input,layers,models,optimizers,metrics,regularizers
+from keras import Input,layers,models,optimizers,metrics,regularizers
 from tensorflow import keras
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,7 +8,7 @@ import math
 import csv
 import codecs
 import pandas as pd
-from DNN.rbfLayer import RBFLayer, InitCentersRandom
+# from DNN.rbfLayer import RBFLayer, InitCentersRandom
 
 class TDNN:
     def __init__(self):
@@ -208,6 +209,7 @@ class TDNN:
         root_output=layers.Dense(1)(root_input)
         model=keras.Model(root_input,root_output)
         return model
+
 
 if __name__ == '__main__':
     path="featureInfo.csv"
