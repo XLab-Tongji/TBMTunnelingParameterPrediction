@@ -10,15 +10,32 @@ import codecs
 import pandas as pd
 # from DNN.rbfLayer import RBFLayer, InitCentersRandom
 
-class TDNN:
-    def __init__(self):
-        self.leafSize=0 # the features' num of the standard leaf model's input
+
+class TNN:
+    def __init__(self, nn_parameters=None):
+        self.nn_parameters = nn_parameters
+        self.leaf_input_num = nn_parameters['leaf_input_num']
+        self.leaf_layer_num = nn_parameters['leaf_layer_num']
+        self.leaf_layer_dims = list(nn_parameters['leaf_layer_dims'])
+        self.leaf_activations = list(nn_parameters['leaf_activations'])
+
+        self.aggre_layer_num = nn_parameters['aggre_layer_num']
+        self.aggre_layer_dims = list(nn_parameters['aggre_layer_dims'])
+        self.aggre_activations = list(nn_parameters['aggre_activations'])
+
+        self.root_layer_num = nn_parameters['root_layer_num']
+        self.root_layer_dims = list(nn_parameters['root_layer_dims'])
+        self.root_activations = list(nn_parameters['root_activations'])
+
+        self.optimizer = nn_parameters['optimizer']
+
+        self.leafSize = 0 # the features' num of the standard leaf model's input
         self.name="default" # the model's name
         self.featureNum=0 # the number of features
         self.branchShape=() # the layers' parameter of the standard branch model
         self.leafShape=() # the layers' parameter of the standard leaf model
 
-    def load_model(self,name="default"):
+    def load_model(self, name="default"):
         i=0
 
     def predict(self):
@@ -41,7 +58,6 @@ class TDNN:
         branches_Outputs = []
         root_Input=[]
 
-
         # 叶节点生成
         for i in range(leaf_num-1):
             leaves.append(self._leaf_generator(self.leafSize))
@@ -49,8 +65,6 @@ class TDNN:
             leaves.append(self._leaf_generator(last_leaf_size))
         else:
             leaves.append(self._leaf_generator(self.leafSize))
-
-
 
         # 叶节点输入生成 输出整合
         for i in range(leaf_num-1):
@@ -65,8 +79,6 @@ class TDNN:
             In = Input(shape=(self.leafSize,))
             leaves_Inputs.append(In)
             leaves_Outputs.append(leaves[-1](In))
-
-
 
 
         # 枝干节点生成
@@ -211,22 +223,22 @@ class TDNN:
         return model
 
 
-if __name__ == '__main__':
-    path="featureInfo.csv"
-    data=pd.read_csv(path)
-    data=np.array(data)
-    data_rebuild=[]
-    for i in data:
-        if np.isnan(i[0])==0:
-            data_rebuild.append(i)
-    data_rebuild=np.array(data_rebuild)
-    tdnn=TDNN()
-
-    tdnn.design_model(origin_data=data_rebuild,
-                      input_shape=26,
-                      leaf_size=4,
-                      leaf_shape_multi=(1,3,9,3,1),
-                      branch_shape=(3,6,9,6,3,1))
+# if __name__ == '__main__':
+#     path="featureInfo.csv"
+#     data=pd.read_csv(path)
+#     data=np.array(data)
+#     data_rebuild=[]
+#     for i in data:
+#         if np.isnan(i[0])==0:
+#             data_rebuild.append(i)
+#     data_rebuild=np.array(data_rebuild)
+#     tdnn=TNN()
+#
+#     tdnn.design_model(origin_data=data_rebuild,
+#                       input_shape=26,
+#                       leaf_size=4,
+#                       leaf_shape_multi=(1,3,9,3,1),
+#                       branch_shape=(3,6,9,6,3,1))
 
 
 
