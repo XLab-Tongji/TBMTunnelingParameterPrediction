@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-import sys
+# import sys
 # sys.path.append('/Users/shuangliz/Desktop/TBMTunnelingParameterPrediction/TDNN/Genetic.py')
 from TDNN import Genetic
 from operator import itemgetter
