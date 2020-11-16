@@ -2,22 +2,17 @@
 
 import numpy as np
 from operator import itemgetter
-from TNN import TNN
+from TDNN import TNN
 import copy
-
-INPUT_TOTAL_NUM = 26  # 总的输入特征数
-LEAF_OUTPUT_NUM = 1
-# AGGREGATION_INPUT = 2
-AGGREGATION_OUTPUT_NUM = 1
-ROOT_OUTPUT_NUM =1
+from TDNN import *
 
 
 class Genetic(object):
     def __init__(self):
         self.nb_layers = range(3, 7)
         self.nb_nodes = [4, 8, 16, 32, 64, 84, 96, 128, 196, 256, 324, 420, 512, 720, 960, 1024]
-        self.optimizers = ["Adam", "Adagrad", "Adadelta", "Momentum", "RMSProp", "sgd"]
-        self.activations = ["relu", "sigmoid", "elu", "leaky_relu", "tanh"]
+        self.optimizers = ["Adam", "Adagrad", "Adadelta", "RMSProp", "sgd"]
+        self.activations = ["relu", "sigmoid", "tanh"]
         self.nb_leaf_input = range(2, 10)
         self.param_choices = ['leaf_input_num',
                               'leaf_layer_num', 'leaf_layer_dims', 'leaf_activations',
@@ -53,7 +48,7 @@ class Genetic(object):
         for _ in range(strength):
             parameters = dict()
             num_leaf_input = np.random.choice(self.nb_leaf_input)  # leaf NN的输入特征数
-            num_leaf_NN = np.ceil(INPUT_TOTAL_NUM/num_leaf_input)  # leaf NN的数量
+            # num_leaf_NN = np.ceil(INPUT_TOTAL_NUM/num_leaf_input)  # leaf NN的数量
             # parameters['num_leaf_NN'] = num_leaf_NN
             parameters['leaf_input_num'] = num_leaf_input  # leaf NN的输入特征数量
             # num_leaf_last_input = INPUT_TOTAL_NUM % num_leaf_input  # 最后一个leaf NN的输入特征数量
@@ -234,6 +229,49 @@ class Genetic(object):
                 new_attr = np.random.choice(self.activations)
             nn_parameters[param_to_be_mutated][index] = new_attr
         return nn_parameters
+
+    def evolve(self, population, retain=0.25, select=0.15, mutation=0.15):
+        # get fitness scores for all members
+        trained_pop = [(self.evaluate_fitness(member, model_name='population_'+str(i)), member)
+                       for i, member in enumerate(population)]
+        # arrange members according to their fitness scores
+        sorted_scores = sorted(trained_pop, key=itemgetter(0))
+        fittest_members = [pair[1] for pair in sorted_scores]
+        accuracy_scores = [pair[0] for pair in sorted_scores]
+        # retain some members for next generation
+        retain_length = int(retain * len(fittest_members))
+        parents = fittest_members[:retain_length]
+        # randomly add some low performing networks
+        for member in fittest_members[retain_length:]:
+            if np.random.random() < select:
+                parents.append(member)
+        # time to make babies
+        # for now, preserve the strength of population
+        nb_babies = len(population) - len(parents)
+        children = []
+        while len(children) < nb_babies:
+            K = 1 + int(3 * np.random.random())
+            mother = np.random.choice(parents)
+            father = None
+            while not father == mother:
+                father = np.random.choice(parents)
+            # now breed
+            babies = self.breed(mother, father, K)
+            for baby in babies:
+                # randomly mutate a baby
+                if np.random.random() < mutation:
+                    baby = self.mutate(baby)
+                if len(children) < nb_babies:
+                    children.append(baby)
+            # we have evolved
+        parents.extend(children)
+        return accuracy_scores, parents
+
+    def evaluate_fitness(self, nn_parameters=None, model_name=None):
+        nn = TNN.TNN(nn_parameters)
+        r2_value = nn.build_model(model_name)
+        return 100 * r2_value
+
 
 
 
