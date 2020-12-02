@@ -5,13 +5,15 @@ import os
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 import matplotlib.pyplot as plt
-plt.rcParams['font.family'] = ['Arial Unicode MS']  # 设置图中中英文可展示字体
+
 import heapq
 import numpy as np
 import random
 import seaborn as sns
 import warnings
 warnings.filterwarnings("ignore")
+
+plt.rcParams['font.family'] = ['Arial Unicode MS']  # 设置图中中英文可展示字体
 
 # Zip数据文件夹的绝对路径
 ZipDir = '/Users/shuangliz/Desktop/TBMModel/Data'
