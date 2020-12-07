@@ -76,15 +76,31 @@ export default new Router({
                     name:'FrameworkDesign',
                     path: '/FrameworkDesign',
                     component: () => import(/* webpackChunkName: "markdown" */ '../components/page/FrameworkDesign.vue'),
-                    meta: { title: '框架设计' }
+                    meta: { title: '框架设计TNN' }
                 },
+                {
+                    // 框架设计组件
+                    name:'FrameworkDesign1',
+                    path: '/FrameworkDesign1',
+                    component: () => import(/* webpackChunkName: "markdown" */ '../components/page/FrameworkDesign1.vue'),
+                    meta: { title: '框架设计LSTM' }
+                },
+
 
                 {
                     // 模型使用组件
                     name:'ModelUse',
                     path: '/ModelUse',
                     component: () => import(/* webpackChunkName: "markdown" */ '../components/page/ModelUse.vue'),
-                    meta: { title: '模型使用' }
+                    meta: { title: '模型使用TNN' }
+                },
+
+                {
+                    // 模型使用组件
+                    name:'ModelUse1',
+                    path: '/ModelUse1',
+                    component: () => import(/* webpackChunkName: "markdown" */ '../components/page/ModelUse1.vue'),
+                    meta: { title: '模型使用LSTM' }
                 },
 
                 {

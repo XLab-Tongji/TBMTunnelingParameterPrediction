@@ -1,126 +1,118 @@
 <template>
-    <div>
-        <div class="container">
-            <div style="height: 600px;">
-                <el-steps direction="vertical" :active=number id="mainStep">
 
-                    <el-step title="文件上传">
-                        <template slot="description">
+    <div class="container">
 
-                        <el-upload
-                            class="upload-demo"
-                            accept=".zip"
-                            action="uploadZip"
-                            ref="refFile"
-                            :auto-upload="false"
-                            :on-change="uploadZip"
-                            :on-preview="handlePreview"
-                            :on-remove="handleRemove"
-                            :before-remove="beforeRemove"
-                            :before-upload="beforeAvatarUpload"
-                            :on-exceed="handleExceed"
-                            :limit="1"
-                            :file-list="fileList">
-                            <el-button size="small" type="primary"
-                                >文件上传</el-button>
-<!--                            <el-button style="margin-left: 10px;" size="small" type="success" @click="uploadZip">上传到服务器</el-button>-->
-                            <div slot="tip" class="el-upload__tip">只能上传zip文件，且不超过500kb {{message}}</div>
-                        </el-upload>
+        <div id="contrast" class="frameContrast">
+            <div class="h1title" style="background: #00d1b2;margin-top: 20px">比对模型</div>
+            <div style="margin-left: 30px">
 
-
-                        </template>
-                    </el-step>
-
-                    <el-step title="数据预处理">
-                        <template slot="description">
-
-                        <div class="ellipse">
-                            <div class="models">数据预处理</div>
+                <el-card shadow="hover" class="mgb20" >
+                    <div class="block" >
+                        <div style="float: left;width: 250px;height: 250px;margin-right: 30px">
+                            <el-image
+                                style="width: 250px; height: 250px; border-radius: 50%;background: white"
+                                :src="imgs2"
+                                :preview-src-list="imgs2"
+                                :fit="fit"
+                            >
+                            </el-image>
                         </div>
-                        </template>
-                    </el-step>
+                        <div class="labeltitle" >比对模型1：为了对LA的预测结果进行比对分析</div>
 
-                    <el-step title="模型调用和预测" description="这是一段很长很长很长的描述性文字">
-                        <template slot="description">
-                            <div class="ellipse">
-                                <div class="models">模型调用和预测</div>
-                            </div>
-                        </template>
-                    </el-step>
+                    </div>
+                </el-card>
 
-                </el-steps>
+                <el-card shadow="hover" class="mgb20">
+                    <div class="block" >
+                        <div style="float: left;width: 250px;height: 250px;margin-right: 30px">
+                            <el-image
+                                style="width: 250px; height: 250px; border-radius: 50%; background: white"
+                                :src="imgs1"
+                                :preview-src-list="imgs1"
+                                :fit="fit"
+                            >
+                            </el-image>
+                        </div>
+                        <div class="labeltitle" >比对模型2:对Tree结构的NN预测效果进行比对分析</div>
+
+                    </div>
+                </el-card>
+
+            </div>
+        </div>
+
+        <div id="testData" class="frameContrast">
+
+            <div style="float: left;width: 30px"></div>
+            <div class="h1title" style="float: left;margin-bottom: 20px">测试数据</div>
+
+            <div style="width: 1000px;padding-left: 40px;padding-top: 20px;margin-top:100px;background:#c7ddef">
+                <el-table
+                    :data="TableData"
+                    stripe
+                    style="width: 100%"
+                    border
+                >
+                    <el-table-column
+                        v-for="info in TestHeader" :key="info.key"
+                        :property="info.key"
+                        :label="info.label"
+                    >
+                        <template slot-scope="scope">
+                            {{scope.row[scope.column.property]}}
+                        </template>
+                    </el-table-column>
+                </el-table>
             </div>
 
-            <br>
-            <el-row style="margin-top: 200px">
-
-                <el-col :span="23">
-
-                    <el-card shadow="hover" class="mgb20" style="height:650px;">
-                        <div class="user-info">
-                            特征数据提取结果
-                        </div>
-                        <div style="width: 1000px;padding-left: 40px;padding-top: 20px;margin-top:10px;background:#c7ddef">
-                            <el-table
-                                :data="TableData"
-                                stripe
-                                style="width: 100%"
-                                border
-                            >
-                                <el-table-column
-                                    v-for="info in TestHeader" :key="info.key"
-                                    :property="info.key"
-                                    :label="info.label"
-                                >
-                                    <template slot-scope="scope">
-                                        {{scope.row[scope.column.property]}}
-                                    </template>
-                                </el-table-column>
-                            </el-table>
-                        </div>
-
-                    </el-card>
-
-                    <el-card shadow="hover" style="height:600px;">
-                        <div slot="header" class="clearfix">
-                            <span>模型预测结果</span>
-                        </div>
-                        <div style="width: 1000px;padding-left: 40px;padding-top: 20px;margin-top:10px;background:#c7ddef">
-                            <el-table
-                                :data="forecastResult"
-                                stripe
-                                style="width: 100%"
-                                border
-                            >
-                                <el-table-column
-                                    v-for="info in ResultHeader" :key="info.key"
-                                    :property="info.key"
-                                    :label="info.label"
-                                >
-                                    <template slot-scope="scope">
-                                        {{scope.row[scope.column.property]}}
-                                    </template>
-                                </el-table-column>
-                            </el-table>
-                        </div>
-                    </el-card>
-
-                </el-col>
-            </el-row>
-
-
+            <div style="width: 800px;height: 80px;padding-left: 620px;padding-top: 30px;background:#c7ddef">
+                <el-button type="primary" icon="el-icon-refresh" @click="NewSample">换一批</el-button>
+                <el-button type="primary" @click="TestResult">测试<i class="el-icon-orange el-icon--right"></i></el-button>
+            </div>
 
         </div>
+
+        <div id="testResult" class="frameContrast">
+            <div class="h1title">测试结果分析指标</div>
+            <div style="width: 300px;margin-left: 40px;padding-top: 20px">
+                <el-table :data="Result" stripe style="width: 100%">
+                    <el-table-column prop="R2" label="R2" width="100">
+                    </el-table-column>
+                    <el-table-column prop="RMSE" label="RMSE" width="100">
+                    </el-table-column>
+                    <el-table-column prop="MAE"  label="MAE" width="100">
+                    </el-table-column>
+                </el-table>
+            </div>
+            <!--                <el-popover v-for="(item,index) in catalogs"-->
+            <!--                            placement="top-start"-->
+            <!--                            width="200"-->
+            <!--                            trigger="hover"-->
+            <!--                            style="padding: 25px"-->
+            <!--                            :key="index">-->
+            <!--                    <div v-for="opt in item[1]"  class="text item">-->
+            <!--                        {{ opt }}-->
+            <!--                    </div>-->
+            <!--                    <el-tag slot="reference" style="background-color: white;color:#ff5555;border:1px solid">{{item[0]}}</el-tag>-->
+            <!--                </el-popover>-->
+        </div>
+
     </div>
 </template>
 
-<script>
-export default {
 
-    name: "ModelUse",
+<script>
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min";
+
+
+export default {
     baseURL:'http://localhost:8080',
+    name: 'FrameworkDesign1',
+
     data() {
         return {
+            fit:'scale-down',
 
             TableData: [
                 {
@@ -498,284 +490,201 @@ export default {
 
             ],
 
-            ResultHeader:[
-                { key:"a" ,label:"稳定段总推进力"},
-                { key:"b" ,label:"稳定段刀盘扭矩"},
-                { key:"c" ,label:"稳定段推进速度"},
+            Result:[
+                {
+                    R2:"0",
+                    RMSE:"0",
+                    MAE:"0"
+                },
+                {
+                    R2:"0",
+                    RMSE:"0",
+                    MAE:"0"
+                }
             ],
 
-            forecastResult:[
+            imgs1:[require("@/assets/img/Tan2.png")],
+            imgs2:[require("@/assets/img/Tan3.png")],
+
+
+            rightHeader: [
                 {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
+                    label: '编码',
+                    key: 'code'
                 },
                 {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
+                    label: '姓名',
+                    key: 'name'
                 },
                 {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
-                {
-                    a:"15713.91974",
-                    b:"2942.392641",
-                    c:"60.83314267"
-                },
+                    label: '权限描述',
+                    key: 'description'
+                }
             ],
-
-            name: localStorage.getItem('ms_username'),
-            fileList: [
-                // {
-                //     name:'Amonkey0.7z',
-                //     url:'d:/Amonkey0.7z'
-                // }
-                ],
-            message:"",
-            colunmName: ['澳中线-悉尼-仓库', '澳中线-悉尼-仓库1'],
-            totalNumber: 100,
-            datas: [
+            rightsDate:[
                 {
-                list: [
-                    {
-                        name: '澳中线-悉尼-仓库1',
-                        value: 1
-                    },
-                    {
-                        name: '澳中线-悉尼-仓库2',
-                        value: 2
-                    }
-                ],
-                userName: 'admin'
-            },
+                    "id":221,
+                    "code": "01",
+                    "name": "西药开立权限",
+                    "description": "医生对西药处方权限",
+                    "ifUse":"0"
+                },
                 {
-                list: [
-                    {
-                        name: '澳中线-悉尼-仓库3',
-                        value: 3
-                    },
-                    {
-                        name: '澳中线-悉尼-仓库4',
-                        value: 4
-                    }
-                ],
-                userName: 'jason'
-            }],
-
-            number:1
-        };
-    },
-
-    methods: {
-
-        handleRemove(file, fileList) {
-            console.log(file, fileList);
-        },
-        handlePreview(file) {
-            console.log(file);
-        },
-        handleExceed(files, fileList) {
-            this.$message.warning(`当前限制选择 1 个文件，
-            本次选择了 ${files.length} 个文件，
-            共选择了 ${files.length + fileList.length} 个文件`);
-        },
-        beforeRemove(file, fileList) {
-            return this.$confirm(`确定移除 ${ file.name }？`);
-        },
-
-        beforeAvatarUpload(file){
-            var FileExt = file.name.replace(/.+\./, "");
-            if (['zip', 'rar','gz',".apk"].indexOf(FileExt.toLowerCase()) === -1){
-                this.message="文件格式有误，请重新上传"
-                return false;
-            }
-            this.message="上传中,请稍等"
-        },
-
-        uploadZip(file)
-        {
-            this.number++;
-            let selectedFile=file;
-            console.log(selectedFile);
-            let name = selectedFile.name; //选中文件的文件名
-            let size = selectedFile.size; //选中文件的大小
-
-            console.log("文件名:" + name + "大小:" + size);
-
-
-
-            this.$http.post(this.publicPath+'api/上传zip文件包',{file})
-            .then(function(response) {
-                this.$refs.refFile.clearFiles();
-                this.featureDataResult();
-            })
-            .catch(function(response){
-                console.log(response);
-            })
-        },
-
-
-
-        featureDataResult()
-        {
-            this.$http.get(this.base+'api/获取特征数据')
-            .then(function(file) {
-                this.number++;
-                this.modelPredictionResults();
-            })
-            .catch(function(res) {
-                console.log(res);
-            })
-        },
-
-        modelPredictionResults()
-        {
-            this.$http.get(this.base+'api/获取模型预测结果')
-                .then(function(file) {
-
-                })
-                .catch(function(res) {
-                    console.log(res);
-                })
+                    "id":222,
+                    "code": "02",
+                    "name": "草药开立权限",
+                    "description": "医生对草药处方权限",
+                    "ifUse":"0"
+                },
+                {
+                    "id":223,
+                    "code": "03",
+                    "name": "成药开立权限",
+                    "description": "医生对成药处方权限",
+                    "ifUse":"0"
+                },
+                {
+                    "id":224,
+                    "code": "04",
+                    "name": "麻醉开立权限",
+                    "description": "医生对麻醉处方权限",
+                    "ifUse":"0"
+                },
+                {
+                    "id":225,
+                    "code": "05",
+                    "name": "精一开立权限",
+                    "description": "医生对精一处方权限",
+                    "ifUse":"0"
+                }
+            ],
         }
+    },
+    mounted() {
+        this.NewSample();
+    },
+    methods:{
+        NewSample(){
+            this.$http.get(this.publicPath+'api/取得十个样例')
+                .then(function(res){
+                    let array=res.data;
 
+                    let i=0;
+                    array.forEach(function(item){
 
+                        this.TableData[i].a=item.a;
+                        this.TableData[i].b=item.b;
+                        this.TableData[i].c=item.c;
+                        this.TableData[i].d=item.d;
+                        this.TableData[i].e=item.e;
+                        this.TableData[i].f=item.f;
+                        this.TableData[i].g=item.g;
+                        this.TableData[i].h=item.h;
+                        this.TableData[i].i=item.i;
+                        this.TableData[i].j=item.j;
+                        this.TableData[i].k=item.k;
+                        this.TableData[i].l=item.l;
+                        this.TableData[i].m=item.m;
+                        this.TableData[i].n=item.n;
+                        this.TableData[i].o=item.o;
+                        this.TableData[i].p=item.p;
+                        this.TableData[i].q=item.q;
+                        this.TableData[i].r=item.r;
+                        this.TableData[i].s=item.s;
+                        this.TableData[i].t=item.t;
+                        this.TableData[i].u=item.u;
+                        this.TableData[i].v=item.v;
+                        this.TableData[i].w=item.w;
+                        this.TableData[i].x=item.x;
+                        this.TableData[i].y=item.y;
+                        this.TableData[i].z=item.z;
+                        this.TableData[i].aa=item.aa;
+                        this.TableData[i].ab=item.ab;
+                        this.TableData[i].ac=item.ac;
+                        i++;
+                    })
+                })
+                .catch()
+            {
+                console.error("后端获取样例失败")
+            }
+        },
+        TestResult(){
+            this.$http.get(this.baseURL+'api/模型测试数据')
+                .then(function(res){
+                    this.Result[0].R2=res.R2;
+                    this.Result[0].RMSE=res.RMSE;
+                    this.MAE=res.MAE;
+                })
+                .catch()
+            {
+                console.error("后端获取结果数据失败")
+            }
 
+        },
     }
-}
+};
+
+
 </script>
 
 <style scoped>
 
 
-.upload-demo{
-
-}
-
-
-.ellipse{
-    width: 250px;
-    height: 150px;
-    margin: 50px;
-    background: #5daf34;
-    border-radius: 50% / 50%;
-    display: flex;
-    align-items: center;        /*竖直居中 垂直居中*/
-    justify-content: center;    /*水平居中*/
-
-}
-
-.models{
-    font-weight: bolder;
-    color: #222222;
-    font-size: 20px;
-}
-
-.el-upload{
-    width: 80px;
-    height: 100px;
-}
-
-.el-upload__text
-{
-    width: 80px;
-    height: 100px;
-}
-
-.el-upload__input
-{
-    width: 80px;
-    height: 100px;
-}
-
-.el-card{
+.frameContrast{
+    width: 1100px;
+    margin-bottom: 10px;
     background: #c7ddef;
 }
 
-.clearfix{
+.h1title{
     font-weight: bolder;
-}
-.user-info {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 20px;
-    font-weight:bolder;
-}
-
-
-.user-info-cont {
-    padding-left: 50px;
-    flex: 1;
-    font-size: 14px;
-    color: #999;
-}
-
-.user-info-cont div:first-child {
+    margin-left: 20px;
+    margin-top: 10px;
     font-size: 30px;
-    color: #222;
+    background: #c7ddef;
+    border-top: 10px;
 }
 
-.user-info-list {
-    font-size: 14px;
-    color: #999;
-    line-height: 25px;
+.el-card{
+    margin-top: 20px;
+    background: #c7ddef;
+    height:350px;
+    width: 1000px;
 }
 
-.user-info-list span {
-    margin-left: 70px;
+
+.block{
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
-.mgb20 {
-    margin-bottom: 20px;
+.labeltitle{
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    height: 150px;
+    width: 400px;
+    color: #222222;
+    background: #449d44;
+    margin-top: 50px;
 }
 
-.todo-item {
-    font-size: 14px;
+#contrast{
+    background: #00d1b2;
+    height: 850px;
 }
 
-.todo-item-del {
-    text-decoration: line-through;
-    color: #999;
+#testData{
+    background: #c7ddef;
 }
 
-.schart {
-    width: 100%;
-    height: 300px;
+#testResult{
+    background: #c7ddef;
+    height: 700px;
 }
+
 
 </style>

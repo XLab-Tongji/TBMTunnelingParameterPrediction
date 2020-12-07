@@ -11,12 +11,15 @@ import './assets/css/theme-green/index.css'; // 浅绿色主题
 import './assets/css/icon.css';
 import './components/common/directives';
 import 'babel-polyfill';
+import VueResource from 'vue-resource';
 
 Vue.config.productionTip = false;
 Vue.use(VueI18n);
 Vue.use(ElementUI, {
     size: 'small'
 });
+Vue.use(VueResource);
+
 const i18n = new VueI18n({
     locale: 'zh',
     messages

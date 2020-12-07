@@ -6,9 +6,11 @@
                 <el-header>神经网络框架图</el-header>
                 <div class="demo-image__preview">
                     <el-image
-                        style="width: 500px; height: 300px;"
                         :src="url"
-                        :preview-src-list="srcList">
+                        :preview-src-list="srcList"
+                        :fit="fit"
+                        >
+
                     </el-image>
                 </div>
             </el-container>
@@ -94,6 +96,7 @@ export default {
 
             FittingDiagram:'https://i.postimg.cc/zDSjpbqw/Live-broadcast.jpg',
             LossDiagram:'https://i.postimg.cc/zDSjpbqw/Live-broadcast.jpg',
+            fit:'scale-down'
         }
     },
     methods(){
@@ -104,6 +107,23 @@ export default {
 </script>
 
 <style scoped>
+
+
+.el-image__inner{
+    width: 100px;
+    height: 100px;
+
+    display: inline-block;
+}
+
+.el-image img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
 
 .blocks{
     height: 400px;

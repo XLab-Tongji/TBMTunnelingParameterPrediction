@@ -77,7 +77,7 @@ export default {
                     title: '主菜单',
                     subs: [
                         {
-                            index: '3-2',
+                            index: '3-1',
                             title: '框架设计',
                             subs: [
                                 {
@@ -91,8 +91,18 @@ export default {
                             ]
                         },
                         {
-                            index: 'FrameworkDesign',
+                            index: '3-2',
                             title: '模型测设比对与评估',
+                            subs: [
+                                {
+                                    index: 'FrameworkDesign',
+                                    title: 'TNN'
+                                },
+                                {
+                                    index: 'FrameworkDesign1',
+                                    title: 'LSTM+AM'
+                                }
+                            ]
                             // subs: [
                             //     {
                             //         index: 'editor',
@@ -105,8 +115,18 @@ export default {
                             // ]
                         },
                         {
-                            index: 'ModelUse',
-                            title: '模型使用'
+                            index: '3-3',
+                            title: '模型使用',
+                            subs: [
+                                {
+                                    index: 'ModelUse',
+                                    title: 'TNN'
+                                },
+                                {
+                                    index: 'ModelUse1',
+                                    title: 'LSTM+AM'
+                                }
+                            ]
                         }
                     ]
                 },
