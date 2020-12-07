@@ -1,8 +1,10 @@
+# -*- coding:utf-8 -*-
+
 # BPNN NN Module
-from keras import  regularizers, backend
+from keras import regularizers, backend
 from tensorflow import keras
 import matplotlib.pyplot as plt
-from TDNN.BPNN import *
+from BaselineModels.GABPNN import *
 
 TOTAL_INPUT_NUM = len(get_feature_name_list(target=TARGET))
 
@@ -24,17 +26,13 @@ class BPNN:
         self.optimizer = nn_parameters['optimizer']
 
         # computed parameters info
-        self.input_num=TOTAL_INPUT_NUM
-
+        self.input_num = TOTAL_INPUT_NUM
 
         self.model_name = "TBMTunnelingParametersPrediction"  # the model's name
-
 
     def build_model(self, model_name=None):
         if model_name is not None:
             self.model_name = model_name
-
-
 
         input_layer = keras.layers.Input(shape=(self.input_num, ))
         layer1 = None
@@ -77,7 +75,6 @@ class BPNN:
         last_val_r2 = history.history['val_r_square'][-1]
 
         return last_val_r2
-
 
     def visualization(self, history, model, test_input, test_output, model_name):
         test_pred = np.array(model.predict(test_input))
