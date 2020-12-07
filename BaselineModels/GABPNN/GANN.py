@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-from TDNN.BPNN import Genetic
+from BaselineModels.GABPNN import Genetic
 from operator import itemgetter
 import numpy as np
 import os
@@ -48,6 +48,6 @@ def evolutionary_NN(nb_gens):
 
 
 if __name__ == '__main__':
-    np.random.seed(0)
+    np.random.seed(1)
     os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
     evolutionary_NN(NB_GENS)

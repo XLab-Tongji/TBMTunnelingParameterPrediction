@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 
 from operator import itemgetter
-from TDNN.BPNN import BPNN
-from TDNN.BPNN import *
+from BaselineModels.GABPNN import BPNN
+from BaselineModels.GABPNN import *
 
 
 class Genetic(object):

@@ -28,7 +28,7 @@ class BPNN:
         # computed parameters info
         self.input_num = TOTAL_INPUT_NUM
 
-        self.model_name = "TBMTunnelingParametersPrediction"  # the model's name
+        self.model_name = "GA_BPNN"  # the model's name
 
     def build_model(self, model_name=None):
         if model_name is not None:
@@ -40,6 +40,7 @@ class BPNN:
         for j in range(self.layer_num-1):
             if j == 0:
                 layer1 = input_layer
+                continue
             if j == self.layer_num - 2:
                 layer2 = keras.layers.Dense(self.layer_dims[j])(layer1)
             else:
@@ -73,6 +74,7 @@ class BPNN:
 
         last_r2 = history.history['r_square'][-1]
         last_val_r2 = history.history['val_r_square'][-1]
+        print("")
 
         return last_val_r2
 

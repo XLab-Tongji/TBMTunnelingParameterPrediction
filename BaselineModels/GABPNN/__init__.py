@@ -11,11 +11,11 @@ EPOCHS = 40
 BATCH_SIZE = 100
 
 # files
-data_csv = 'TBMData/data.csv'
-F_feature_imp_file = 'TBMData/FI_稳定段总推进力均值.txt'
+data_csv = '../../TBMDatapre/Data/tnn.csv'
+F_feature_imp_file = '../../TDNN/TBMData/FI_稳定段总推进力均值.txt'
 T_feature_imp_file = 'TBMData/FI_稳定段刀盘扭矩均值.txt'
 S_feature_imp_file = 'TBMData/FI_稳定段推进速度均值.txt'
-normalization_info_file_dir = 'TBMData/'
+normalization_info_file_dir = 'NormData/'
 
 # fixed variables
 F_name = '稳定段总推进力均值'
@@ -87,19 +87,6 @@ def series_zscore(series, y_name):
     with open(normalization_info_file, 'a') as norm_file:
         norm_file.write('data_y\tmean\tstd\n')
         norm_file.write(y_name + '\t' + str(mean) + '\t' + str(std))
-    # print(new_series)
-    # length = series.shape[0]
-    # # cols_count = df_data.shape[1]
-    # total = series.sum()
-    # # total = reduce(lambda x, y: x+y, df_data)
-    # data = series.values.tolist()
-    # ave = float(total) / length
-    # tempsum = np.nansum([pow(data[data_index] - ave, 2) for data_index in range(length)])
-    # tempsum = pow(float(tempsum) / length, 0.5)
-    # for data_index in range(length):
-    #     data[data_index] = (data[data_index] - ave) / tempsum
-    # print(data)
-    # return data
     return new_series
 
 

@@ -100,6 +100,7 @@ class TNN:
             for j in range(self.aggre_layer_num - 1):
                 if j == 0:
                     layer1 = input_layer
+                    continue
                 if j == self.aggre_layer_num - 2:
                     layer2 = keras.layers.Dense(self.aggre_layer_dims[j])(layer1)
                 else:
