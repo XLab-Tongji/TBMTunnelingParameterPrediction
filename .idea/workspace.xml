@@ -3,50 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b11304fe-c5d6-400c-b736-3193ab149385" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段刀盘扭矩均值.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段刀盘扭矩均值.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段刀盘扭矩均值1.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段总推进力均值.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段总推进力均值.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段总推进力均值1.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段推进速度均值.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段推进速度均值.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC result for 稳定段推进速度均值1.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段刀盘扭矩均值2.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段刀盘扭矩均值3.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段总推进力均值2.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段总推进力均值3.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段推进速度均值2.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/PC_result_for_稳定段推进速度均值3.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/Pearson Correlation .eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/PCFeatureAnalysis/Pearson Correlation .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170219.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170219:32606-36718.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170219:57905-59899.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170219:75808-78118.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:10654-12740.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:13214-15049.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:15448-17288.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:18383-20120.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:3840-6105.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:55083-56782.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:6619-9024.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20170225:76869-78500.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:14789-16575.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:1691-3441.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:56863-60179.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:62421-64268.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:74392-75931.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171107:79415-81405.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171113.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171113:15476-17897.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Figures/ParFig/CREC188_20171113:730-2954.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Model/TBMTunnelingParametersPrediction" beforeDir="false" afterPath="$PROJECT_DIR$/TDNN/Model/TBMTunnelingParametersPrediction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Model/population_0" beforeDir="false" afterPath="$PROJECT_DIR$/TDNN/Model/population_0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Model/population_1" beforeDir="false" afterPath="$PROJECT_DIR$/TDNN/Model/population_1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TDNN/Model/population_2" beforeDir="false" afterPath="$PROJECT_DIR$/TDNN/Model/population_2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TDNN/FeatureAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,57 +14,31 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1605085231445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TNN" />
+    <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1606982097629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$TNN.coverage" NAME="TNN Coverage Results" MODIFIED="1605062442056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TNN" />
     <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$Genetic.coverage" NAME="Genetic Coverage Results" MODIFIED="1604541319526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TNN" />
     <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$GANN.coverage" NAME="GANN Coverage Results" MODIFIED="1605495955203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDNN" />
     <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1605451962239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDNN" />
+    <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$data_extract.coverage" NAME="data_extract Coverage Results" MODIFIED="1607096794744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TBMdatapre" />
+    <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$DealNew.coverage" NAME="DealNew Coverage Results" MODIFIED="1606053137537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TDNN" />
+    <SUITE FILE_PATH="coverage/TBMTunnelingParameterPrediction$main.coverage" NAME="main Coverage Results" MODIFIED="1607267774253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TBMdatapre" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TNN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDNN/TNN.py">
+      <file leaf-file-name="FeatureAnalysis.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="-774">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDNN/__init__.py">
+      <file leaf-file-name="DataAnalysisForTNN.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TBMdatapre/DataAnalysisForTNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#25#44#0" expanded="true" />
-                <element signature="e#1453#2190#0" />
-                <element signature="e#1746#1765#0" />
-                <element signature="e#2546#3164#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genetic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDNN/Genetic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3678">
-              <caret line="250" selection-start-line="250" selection-end-line="250" />
-              <folding>
-                <element signature="e#24#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GANN.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TDNN/GANN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -123,18 +54,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>leaf_num</find>
-      <find>evolve</find>
-      <find>math</find>
-      <find>evaluate_fitness</find>
-      <find>data_csv</find>
-      <find>Add()</find>
-      <find>data_preparation</find>
-      <find>target</find>
-      <find>leaf_last_NN_input_num</find>
-      <find>target=</find>
       <find>.columns</find>
       <find>visualizatio</find>
+      <find>create</find>
+      <find>breed</find>
+      <find>dataNonOutliers</find>
+      <find>createPreproData</find>
+      <find>preDataAddress</find>
+      <find>self.dataPath</find>
+      <find>print</find>
+      <find>calculateRiseUpdate</find>
+      <find>findFStable</find>
+      <find>errorHandle</find>
+      <find>transAddress</find>
+      <find>f_1</find>
+      <find>self.parInfo</find>
+      <find>riseUpdate</find>
+      <find>createPrepDataFile</find>
+      <find>stable</find>
+      <find>stable(</find>
+      <find>AllTxtHandle</find>
+      <find>findList</find>
+      <find>calculateStable</find>
+      <find>riseUpdate5</find>
+      <find>stable_features</find>
+      <find>set_features</find>
+      <find>cur_row_mean_list</find>
+      <find>build_features_dayly</find>
+      <find>max</find>
+      <find>max(</find>
+      <find>set_feature_names</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,8 +110,18 @@
         <option value="$PROJECT_DIR$/TDNN/train.py" />
         <option value="$PROJECT_DIR$/TDNN/Genetic.py" />
         <option value="$PROJECT_DIR$/TDNN/__init__.py" />
-        <option value="$PROJECT_DIR$/TDNN/GANN.py" />
         <option value="$PROJECT_DIR$/TDNN/TNN.py" />
+        <option value="$PROJECT_DIR$/TDNN/GANN.py" />
+        <option value="$PROJECT_DIR$/TDNN/FeatureAnalysis.py" />
+        <option value="$PROJECT_DIR$/TDNN/DealNew.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/main.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/main0.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/data_extract.py" />
+        <option value="$PROJECT_DIR$/TDNN/tensorflow_gpu_test.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py" />
+        <option value="$PROJECT_DIR$/TBMdatapre/DataAnalysisForTNN.py" />
       </list>
     </option>
   </component>
@@ -175,8 +134,8 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="497" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectView">
@@ -195,13 +154,13 @@
             <path>
               <item name="TBMTunnelingParameterPrediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="TBMTunnelingParameterPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="TDNN" type="462c0819:PsiDirectoryNode" />
+              <item name="TBMdatapre" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TBMTunnelingParameterPrediction" type="b2602c69:ProjectViewProjectNode" />
               <item name="TBMTunnelingParameterPrediction" type="462c0819:PsiDirectoryNode" />
-              <item name="TDNN" type="462c0819:PsiDirectoryNode" />
-              <item name="TBMData" type="462c0819:PsiDirectoryNode" />
+              <item name="TBMdatapre" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,6 +186,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TBMdatapre" />
       <recent name="$PROJECT_DIR$/TDNN/TBMData" />
       <recent name="$PROJECT_DIR$/TNN" />
       <recent name="$PROJECT_DIR$/T-DNN/TNN" />
@@ -244,7 +204,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GANN">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="DealNew" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TBMTunnelingParameterPrediction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TDNN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TDNN/DealNew.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="GANN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TBMTunnelingParameterPrediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -264,7 +243,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Genetic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="data_extract" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TBMTunnelingParameterPrediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,18 +251,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TNN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TBMdatapre" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TNN/Genetic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TBMdatapre/data_extract.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="TNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TBMTunnelingParameterPrediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,18 +270,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TNN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TNN/TNN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TBMdatapre/main0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TBMTunnelingParameterPrediction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -310,50 +289,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TDNN" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TBMdatapre" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TDNN/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TBMTunnelingParameterPrediction" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TNN" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TNN/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Genetic" />
-      <item itemvalue="Python.TNN" />
-      <item itemvalue="Python.__init__" />
       <item itemvalue="Python.GANN" />
-      <item itemvalue="Python.__init__ (1)" />
+      <item itemvalue="Python.DealNew" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.data_extract" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.data_extract" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.DealNew" />
         <item itemvalue="Python.GANN" />
-        <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.__init__" />
-        <item itemvalue="Python.TNN" />
-        <item itemvalue="Python.Genetic" />
       </list>
     </recent_temporary>
   </component>
@@ -371,23 +331,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50666666" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2060606" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10085837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1602289" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.06509299" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.11444921" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.0630303" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4278788" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -396,6 +356,29 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35151514" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15808298" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43151516" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.1416309" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -405,78 +388,147 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="26" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="df_X.count()" language="Python" />
-        <watch expression="series_y.count()" language="Python" />
-        <watch expression="train_X.shape" language="Python" />
-        <watch expression="train_y.shape" language="Python" />
-        <watch expression="test_X.shape" language="Python" />
-        <watch expression="test_y.shape" language="Python" />
-        <watch expression="i" language="Python" />
-        <watch expression="cur_index" language="Python" />
-        <watch expression="TOTAL_INPUT_NUM" language="Python" />
-        <watch expression="epochs[:100]" language="Python" />
+        <watch expression="self.feature_col_names" language="Python" />
+        <watch expression="len(sub_rnn_rise_feature_values)" language="Python" />
+        <watch expression="means.values" language="Python" />
+        <watch expression="self.tnn_features.shape" language="Python" />
+        <watch expression="stable_features" language="Python" />
+        <watch expression="rnn_rise_features_df.shape" language="Python" />
+        <watch expression="rnn_stable_features_df.shape" language="Python" />
+        <watch expression="tnn_features_df.shape" language="Python" />
+        <watch expression="self.rnn_rise_features.shape" language="Python" />
+        <watch expression="self.rnn_stable_features.shape" language="Python" />
+        <watch expression="file" language="Python" />
+        <watch expression="str(file).index('20160417')" language="Python" />
+        <watch expression="str(file).find('20160417')" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>epochs[:100]</expression-string>
+        <expression-string>str(file).find('20160417')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>TOTAL_INPUT_NUM</expression-string>
+        <expression-string>str(file).index('20160417')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>cur_index</expression-string>
+        <expression-string>file</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>i</expression-string>
+        <expression-string>self.rnn_stable_features.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test_y.shape</expression-string>
+        <expression-string>self.rnn_rise_features.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>test_X.shape</expression-string>
+        <expression-string>tnn_features_df.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>train_y.shape</expression-string>
+        <expression-string>rnn_stable_features_df.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>train_X.shape</expression-string>
+        <expression-string>rnn_stable_features_df</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>series_y.count()</expression-string>
+        <expression-string>rnn_rise_features_df.shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>df_X.count()</expression-string>
+        <expression-string>stable_features</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="131" column="10" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/GANN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/Genetic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3795">
+          <caret line="257" column="23" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/TNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#25#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/Genetic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/DealNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="131" column="10" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/GANN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TDNN/TNN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1980">
@@ -495,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,9 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,39 +582,19 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TNN/TBMData/TBM.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TNN/TBMData/TBM.csv" />
     <entry file="file://$PROJECT_DIR$/TDNN/TBMData/data.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TNN/TBMData/normalization_info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDNN/TBMData/ModelParam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TNN/TBMData/normalization_info.txt" />
+    <entry file="file://$PROJECT_DIR$/TDNN/TBMData/ModelParam.py" />
     <entry file="file://$PROJECT_DIR$/TDNN/Genetic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,57 +615,229 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/var/pyenv/versions/3.6.5/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDNN/FeatureAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="306" column="30" selection-start-line="306" selection-start-column="22" selection-end-line="306" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TDNN/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="60">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#25#44#0" expanded="true" />
-            <element signature="e#1453#2190#0" />
-            <element signature="e#1746#1765#0" />
-            <element signature="e#2546#3164#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/Figures/ZhuSanJiao/测点编号.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/Figures/ZhuSanJiao/编号.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/DealNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/GANN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TDNN/Genetic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3678">
-          <caret line="250" selection-start-line="250" selection-end-line="250" />
+        <state relative-caret-position="313">
+          <caret line="257" column="23" selection-start-line="257" selection-start-column="18" selection-end-line="257" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Figs/20170219_32606~36718.png" />
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Figs/20170219_52068~54366.png" />
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Figs/20170219_55325~57057.png" />
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/main0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="134" column="103" selection-start-line="134" selection-start-column="45" selection-end-line="134" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/parInfo0.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/20171113.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-653" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/data_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
           <folding>
-            <element signature="e#24#42#0" expanded="true" />
+            <element signature="e#24#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Data/rnn_rise.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Data/parInfo.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-224">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Data/tnn.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Data/rnn_stable.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/var/pyenv/versions/3.6.5/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDNN/tensorflow_gpu_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#24#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/Data/parInfo1.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1432#3110#0" />
+            <element signature="e#4592#5136#0" />
+            <element signature="e#6176#8539#0" />
+            <element signature="e#6364#8510#0" />
+            <element signature="e#6453#6538#0" />
+            <element signature="e#6708#6845#0" />
+            <element signature="e#7692#7788#0" />
+            <element signature="e#8581#8685#0" />
+            <element signature="e#8732#8846#0" />
+            <element signature="e#8895#9013#0" />
+            <element signature="e#9053#10456#0" />
+            <element signature="e#9095#10398#0" />
+            <element signature="e#9410#10354#0" />
+            <element signature="e#9912#9976#0" />
+            <element signature="e#10256#10320#0" />
+            <element signature="e#10535#10653#0" />
+            <element signature="e#10717#11007#0" />
+            <element signature="e#10809#10982#0" />
+            <element signature="e#11080#11701#0" />
+            <element signature="e#11182#11630#0" />
+            <element signature="e#11411#11630#0" />
+            <element signature="e#11546#11630#0" />
+            <element signature="e#11763#12714#0" />
+            <element signature="e#11901#12360#0" />
+            <element signature="e#12177#12360#0" />
+            <element signature="e#12276#12360#0" />
+            <element signature="e#12369#12378#0" />
+            <element signature="e#12598#12671#0" />
+            <element signature="e#12783#12987#0" />
+            <element signature="e#13061#13612#0" />
+            <element signature="e#13367#13464#0" />
+            <element signature="e#13650#13666#0" />
+            <element signature="e#13706#14016#0" />
+            <element signature="e#13794#13839#0" />
+            <element signature="e#14098#15102#0" />
+            <element signature="e#14167#14708#0" />
+            <element signature="e#14167#14201#0" />
+            <element signature="e#14446#14600#0" />
+            <element signature="e#14857#14954#0" />
+            <element signature="e#15181#16010#0" />
+            <element signature="e#15305#15615#0" />
+            <element signature="e#15470#15582#0" />
+            <element signature="e#15765#15862#0" />
+            <element signature="e#16100#16629#0" />
+            <element signature="e#16384#16481#0" />
+            <element signature="e#16711#17204#0" />
+            <element signature="e#16959#17056#0" />
+            <element signature="e#17303#18053#0" />
+            <element signature="e#17555#17652#0" />
+            <element signature="e#17877#18034#0" />
+            <element signature="e#17927#18034#0" />
+            <element signature="e#18092#19595#0" />
+            <element signature="e#18138#19536#0" />
+            <element signature="e#18474#19487#0" />
+            <element signature="e#18976#19040#0" />
+            <element signature="e#19320#19384#0" />
+            <element signature="e#19711#20947#0" />
+            <element signature="e#20724#20928#0" />
+            <element signature="e#21059#21644#0" />
+            <element signature="e#21421#21625#0" />
+            <element signature="e#21691#23029#0" />
+            <element signature="e#21772#22289#0" />
+            <element signature="e#22332#22479#0" />
+            <element signature="e#22375#22479#0" />
+            <element signature="e#22431#22479#0" />
+            <element signature="e#22678#22849#0" />
+            <element signature="e#22898#23009#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TDNN/TNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
+        <state relative-caret-position="15">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TDNN/GANN.py">
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/DataAnalysisForTNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TBMdatapre/FeatureAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-774">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
