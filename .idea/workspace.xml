@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b11304fe-c5d6-400c-b736-3193ab149385" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py" afterDir="false" />
-    </list>
+    <list default="true" id="b11304fe-c5d6-400c-b736-3193ab149385" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="DataPreprocessing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="349">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
               </folding>
@@ -790,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TBMdatapre/DataPreprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="349">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
           </folding>
