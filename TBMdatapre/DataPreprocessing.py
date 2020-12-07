@@ -13,12 +13,12 @@ import copy
 warnings.filterwarnings("ignore")
 # 存放预处理数据的文件夹，可按需修改
 preDataAddress = 'Data'
-par_info_file = 'parInfo2.csv'
-tnn_data_file = 'tnn2.csv'
-rnn_data_rise_file = 'rnn_rise2.csv'
-rnn_data_stable_file = 'rnn_stable2.csv'
+par_info_file = 'parInfo.csv'
+tnn_data_file = 'tnn.csv'
+rnn_data_rise_file = 'rnn_rise.csv'
+rnn_data_stable_file = 'rnn_stable.csv'
 fig_dir = 'Figs'
-fig_form = '.png'
+fig_form = '.png'  # .eps
 # 存放zip压缩包的文件夹
 # zipAddress = '/Users/shuangliz/Desktop/TBMModel/Data'  # 本地地址
 zipAddress = '../Data'  # 服务器容器内地址
