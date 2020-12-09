@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "dist/static")
+    os.path.join(BASE_DIR, "ForeEnd/dist/static")
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'PredictionPlatform')],
+        'DIRS': [os.path.join(BASE_DIR, 'ForeEnd/dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
