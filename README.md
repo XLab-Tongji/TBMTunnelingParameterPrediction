@@ -85,9 +85,6 @@ GBDT、GRNN（后期会有所增加）
 cd BackEnd
 cd SoftwareeEngineeringProject
 cd mysite
-cd ForeEnd
-npm install
-cd ..
 python manage.py runserver
 ```
 
