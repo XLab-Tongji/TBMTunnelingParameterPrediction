@@ -75,3 +75,19 @@ GBDT、GRNN（后期会有所增加）
 
 目标：下学期一起写论文
 
+
+
+### 五、展示界面
+
+**前后端代码集成在BackEnd文件夹内**
+
+```shell
+cd BackEnd
+cd SoftwareeEngineeringProject
+cd mysite
+cd ForeEnd
+npm install
+cd ..
+python manage.py runserver
+```
+
