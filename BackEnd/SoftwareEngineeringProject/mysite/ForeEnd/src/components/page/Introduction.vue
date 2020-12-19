@@ -18,12 +18,12 @@
                 </template>
 
                 <div class="IntroTest">
-                    <div>随着“一带一路”倡议的推进，我国对中西部地
+                    <div>&emsp;&emsp;随着“一带一路”倡议的推进，我国对中西部地
                         区公路、铁路等交通基础设施的投资力度不断加大，
                         这极大的促进了以全断面隧道掘进机(TBM)为主要
                         施工方式的深长隧道开挖技术的发展
                     </div>
-                    <div>TBM 的高效掘进与施工安全一直是相关人员
+                    <div>&emsp;&emsp;TBM 的高效掘进与施工安全一直是相关人员
                         最为关心的问题。相较于传统钻爆法，TBM 具有施
                         工快速、安全、自动化程度高等优点，但同时
                         它也对于地质条件更加敏感；岩土不确定性与不良
@@ -42,14 +42,15 @@
                     <i class="header-icon el-icon-s-flag"></i>
                 </template>
                 <div class="IntroTest">
-                    <div>除了围岩质量，TBM 的掘进效率也很大程度上依赖于掘进参数的选择。
+                    <div>&emsp;&emsp;除了围岩质量，TBM 的掘进效率也很大程度上依赖于掘进参数的选择。
                         TBM 设备是各种复杂系统的组合，它的性能很大程度上依赖于刀盘切削性能与推进压力。
                     </div>
-                    <div>优化这两个掘进参数，可以促进TBM挖掘的掘进效率</div>
+                    <div>&emsp;&emsp;优化这两个掘进参数，可以促进TBM挖掘的掘进效率</div>
                 </div>
             </el-collapse-item>
 
             <el-collapse-item name="3">
+
                 <template slot="title" span="12">
 
                     <div style="width: 40px"></div>
@@ -59,36 +60,38 @@
                     <i class="header-icon el-icon-star-on"></i>
 
                 </template>
+
                 <div class="IntroTest">
-                    <div>首先区分掘进过程的上升段和稳定段，剔除异常数据，为后期建模提供良好的基础.</div>
-                    <div>搭建多个神经网络模型，对比分析预测结果，选出最好的模型.</div>
-                    <div>利用最优模型分析预测，来帮助确定掘进时合适的掘进参数.</div>
+                    <div>&emsp;&emsp;首先区分掘进过程的上升段和稳定段，剔除异常数据，为后期建模提供良好的基础.</div>
+                    <div>&emsp;&emsp;搭建多个神经网络模型，对比分析预测结果，选出最好的模型.</div>
+                    <div>&emsp;&emsp;利用最优模型分析预测，来帮助确定掘进时合适的掘进参数.</div>
                 </div>
 
-                <el-col :offset="2" :span="12">
+                <el-col :offset="1" :span="18" style="margin-top: 60px">
 
-                    <div class="sub-title" >Model</div>
-                    <div class="demo-basic--circle">
+                    <div class="sub-title">Model</div>
+
+                    <div class="demo-basic--circle" style="margin-left: 30px;margin-top:20px">
 
                         <div class="block" >
-                            <div style="float: left">
-                            <el-avatar id="1Model"
-                                       :size="200"
-                                       src="circleUrl"
-                                       @click.native="handleSelect('/TNN')"></el-avatar>
+                            <div id="1Model" style="float: left">
+                                <button class="ButtonCss"
+                                        style="width:200px;height:200px;border-radius:100px 100px 100px 100px"
+                                        @click="handleSelect('/TNN')"
+                                ></button>
                             </div>
                             <div class="labeltitle" >
                                 <label for="1Model">TNN</label>
                             </div>
-
                         </div>
 
                         <div class="block">
-                            <div style="float: left">
-                                <el-avatar id="2Model"
-                                       :size="200"
-                                       src="circleUrl"
-                                       @click.native="handleSelect('/LSTM')"></el-avatar>
+                            <div id="2Model" style="float: left">
+                                <button class="ButtonCss"
+                                    style="width:200px;height:200px;border-radius:100px 100px 100px 100px"
+                                    @click="handleSelect('/LSTM')"
+                                >
+                                </button>
                             </div>
                             <div class="labeltitle" >
                                 <label for="2Model">LSTM+AM</label>
@@ -126,6 +129,7 @@ export default {
 
 
     methods: {
+
         handleSelect(key){
             if(key!=='') {
                 console.log(key);
@@ -141,23 +145,193 @@ export default {
 </script>
 
 <style scoped>
+
+
+.sub-title{
+    color:white;
+    font-size: 30px;
+    height: 50px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff, 0 0 30px #fff,
+    0 0 40px #ff00de, 0 0 70px #ff00de,
+    0 0 80px #ff00de, 0 0 100px #ff00de,
+    0 0 150px #ff00de;
+}
+/*.ButtonCss{*/
+/*    z-index: 1;*/
+/*    color: white;*/
+/*    background: #40a9ff;*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    padding: 0.5em 1em;*/
+/*}*/
+
+/*.ButtonCss:hover {*/
+/*    cursor: pointer;*/
+/*    animation: jelly 0.5s;*/
+/*}*/
+
+/*.ButtonCss {*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    z-index: 1;*/
+/*    position: relative;*/
+/*    color: white;*/
+/*    background: #40a9ff;*/
+/*    padding: 0.5em 1em;*/
+/*}*/
+
+
+/*.ButtonCss::before {*/
+/*    width:200px;height:200px;border-radius:100px 100px 100px 100px;*/
+/*    content: "";*/
+/*    z-index: -1;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background-color: #fa541c;*/
+/*    transform-origin: center;*/
+/*    transform: scaleY(0);*/
+/*    transition: transform 0.4s ease-in-out;*/
+/*}*/
+
+/*.ButtonCss:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.ButtonCss:hover::before {*/
+/*    transform-origin: center;*/
+/*    transform: scaleY(1);*/
+/*}*/
+
+/*.ButtonCss{*/
+/*    outline: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    color: white;*/
+/*    position: relative;*/
+/*    background-color: #40a9ff;*/
+/*    z-index: 1;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.ButtonCss::before {*/
+/*    z-index: -1;*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: 1em;*/
+/*    height: 1em;*/
+/*    border-radius: 50%;*/
+/*    background-color: #f18640;*/
+/*    transform-origin: center;*/
+/*    transform: translate3d(-50%, -50%, 0) scale(0, 0);*/
+/*    transition: transform 0.35s ease-in-out;*/
+/*}*/
+
+/*.ButtonCss:hover::before {*/
+/*    transform: translate3d(-50%, -50%, 0) scale(16, 16);*/
+/*}*/
+
+.ButtonCss {
+    position: relative;
+    z-index: 1;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    color: white;
+    background-color: #1890ff;
+}
+
+.ButtonCss:hover {
+    cursor: pointer;
+}
+
+.ButtonCss::before {
+    width:200px;height:200px;border-radius:100px 100px 100px 100px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 4px solid #1890ff;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.ButtonCss:hover::before {
+    transition: all 0.75s ease-out;
+    border: 1px solid#e6f7ff;
+    transform: scale(1.25);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+@keyframes jelly {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    33% {
+        transform: scale(0.9, 1.1);
+    }
+
+    66% {
+        transform: scale(1.1, 0.9);
+    }
+}
+
+@keyframes jelly {
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    25%,
+    75% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+}
+
+
+
 .block{
     float: left;
     height: 250px;
     width: 400px;
-    border-top: 20px;
+    margin-left: 100px;
 }
 
 
 .labeltitle{
     float: left;
-    font-size: 20px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     width: 150px;
-    color: #dd6161;
-    background: #2d8cf0;
+
+    text-shadow:#FF0000 0 0 10px;
+    color:white;
+    font-size:60px;
+
+    /*color: #dd6161;*/
+    /*background: #2d8cf0;*/
     border-top: 20px;
 }
 
@@ -181,28 +355,6 @@ export default {
     font-size: 20px;
     padding-left: 20px;
 }
-.sub-title{
-    font-size: 20px;
-    height: 50px;
-
-}
 
 
 </style>
-
-<!--                <el-col :span="5" style="background: #00a854;width: 150px;height: 300px">-->
-<!--                    <div class="grid-content bg-purple-dark">-->
-<!--                        <el-form-item label-width="120px">-->
-
-<!--                        <span slot="label">-->
-<!--                            <span class="span-box">-->
-<!--                                <span>主食 ：</span>-->
-<!--                            <i class="el-icon-tableware ico-pre"></i>-->
-<!--                            </span>-->
-<!--                        </span>-->
-
-<!--&lt;!&ndash;                            <el-radio v-model="" label="1">饺子</el-radio>&ndash;&gt;-->
-<!--&lt;!&ndash;                            <el-radio v-model="" label="2">米饭</el-radio>&ndash;&gt;-->
-<!--                        </el-form-item>-->
-<!--                    </div>-->
-<!--                </el-col>-->
