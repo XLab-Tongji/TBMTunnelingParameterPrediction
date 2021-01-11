@@ -1,2 +1,50 @@
 # 删除.idea系列文件
 .idea/*
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# 删除Vue配置文件
+.DS_Store
+/BackEnd/SoftwareEngineeringProject/mysite/ForeEnd/node_modules
+/BackEnd/SoftwareEngineeringProject/mysite/ForeEnd/dist
+/dist
+/node_modules
+
+# #java
+# *.class
+
+# #package file
+# *.war
+# *.ear
+# *.zip
+# *.tar.gz
+# *.rar
+# #maven ignore
+# target/
+# build/
+
+# #eclipse ignore
+# .settings/
+# .project
+# .classpatch
+
+# #Intellij idea
+# .idea/
+# /idea/
+# *.ipr
+# *.iml
+# *.iws
+
+# # temp file
+# *.log
+# *.cache
+# *.diff
+# *.patch
+# *.tmp
+
+# # system ignore
+# .DS_Store
+# Thumbs.db
