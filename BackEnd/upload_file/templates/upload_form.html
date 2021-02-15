@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/upload/zipFile/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="zipFile">
+    <br>
+    <input type="submit" value="上传">
+</form>
+<form action="/upload/testData/" method="get">
+    <button type="submit">换一批</button>
+</form>
+<form action="/upload/predictModel/" method="post">
+    <button type="submit">预测模型</button>
+</form>
+<form action="/upload/resultAnalysis" method="get">
+    <button type="submit">测试结果分析指标</button>
+</form>
+</body>
+</html>
